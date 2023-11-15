@@ -93,7 +93,6 @@
     height: 65px;
     width: 170px;
     margin: 8px;
-    font-weight: bold;
     border-radius: 10px;
     font-size: large;
 }
@@ -101,6 +100,8 @@
 .button_started{
     background-color: #000000;  
     color: #ffffff;
+    box-shadow: 3px 3px 10px #b8b8b8;
+    font-weight: bold;
 }
 
 .button_started:hover{
@@ -113,6 +114,8 @@
 .button_learn{
     background-color: #ffffff;
     color: #000000;
+    box-shadow: 3px 3px 10px #b8b8b8;
+    font-weight: normal;
 }
 
 .button_learn:hover{
@@ -156,6 +159,7 @@
     position: absolute;
     z-index: 3;
     line-height: 25px;
+    box-shadow: 5px 5px 15px #b8b8b8;
 }
 
 .main_review_card_text span{
@@ -179,13 +183,15 @@
 
 .graphic_main_card{
     background-color: #ffffff;
-    margin-left: 900px;
+    margin-top: 10px;
+    margin-left: 870px;
     height: 350px;
     width: 350px;
     border-radius: 1.5rem;
     justify-content: end;
     z-index: 3;
     position: absolute;
+    box-shadow: 5px 5px 15px #b8b8b8;
 }
 
 .graphic_main_title{
@@ -204,7 +210,7 @@
 }
 
 .graphic_main_payment{
-    background-color: blue;
+    // background-color: blue;
     border: 0.5px groove #e0e0e0;
     height: 60px;
     width: 250px;
@@ -217,27 +223,19 @@
     position: absolute;
     z-index: 3;
     line-height: 25px;
+    margin-left: 40px;
+    margin-top: 135px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .graphic_main_payment_image img{
     height: 50px;
     width: 50px;
-    margin-top: 10px;
+    margin-top: 13px;
     border-radius: 20px;
     margin-bottom: 5px;
 }
-
-// .payment-received{
-//     background-color: #3661E2;
-//     color: #ffffff;
-//     border: none;
-//     height: 65px;
-//     width: 170px;
-//     margin: 8px;
-//     font-weight: bold;
-//     border-radius: 10px;
-//     font-size: large;
-// }
 
 .payment-received:hover{
     background-color: #244196;
@@ -342,4 +340,21 @@
 .card-description{
     color: #5c5c5c;
     padding: 15px;
+}
+
+@media screen and (max-width: 1899px){
+    .main_container{
+        background-color: blue; 
+    }
+
+    .main_container{
+        // background-color: gray;
+        height: 850px;
+        width: 1250px;
+        margin-top: 30px;
+        margin-left: 200px;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+    }
 }
